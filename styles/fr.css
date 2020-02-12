@@ -13,6 +13,8 @@ h1 {
   line-height: 0.9em;
   font-family: "Lora", serif;
   color: #ece4de;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 p {
@@ -36,7 +38,7 @@ p {
 }
 
 .box {
-  width: 60vh;
+  width: 50vh;
   height: 40vh;
   padding: 50px;
 }
@@ -90,7 +92,7 @@ p {
   }
 
   .box {
-    width: 50vh;
+    width: 40vh;
     height: 30vh;
     padding: 35px;
   }
@@ -112,5 +114,21 @@ p {
   }
   h1 {
     font-size: 2em;
+  }
+  .poster {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box {
+    width: 30vh;
+    height: 30vh;
+    padding: 35px;
   }
 }
