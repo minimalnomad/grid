@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+html {
+  background: #ece4de;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.5em;
+  line-height: 0.9em;
+  font-family: "Lora", serif;
+  color: #ece4de;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: "Lora", serif;
+  color: #ece4de;
+}
+
+.wrapper {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 0px;
+}
+
+.poster {
+  height: 75vh;
+}
+
+.box {
+  width: 60vh;
+  height: 40vh;
+  padding: 50px;
+}
+
+.box-1 {
+  background: #a10b00;
+  /* grid-column: 2 / 4; */
+  /* justify-self: stretch; */
+}
+.box-2 {
+  background: #000070;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+.box-3 {
+  color: black;
+  background: white;
+}
+
+.box-3 h1 {
+  color: black;
+}
+
+.box-4 p {
+  color: black;
+}
+
+.box-5 {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.box-6 {
+  background: grey;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.box-4 {
+  background: #f3f000;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+@media (max-width: 1500px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box {
+    width: 50vh;
+    height: 30vh;
+    padding: 35px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
