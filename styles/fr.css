@@ -85,6 +85,22 @@ p {
 }
 @media (max-width: 1500px) {
   .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box {
+    width: 50vh;
+    height: 30vh;
+    padding: 35px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 968px) {
+  .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
