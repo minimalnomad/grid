@@ -44,7 +44,7 @@
 .box-5 {
   background: black;
 }
-/* 
+
 @media (max-width: 768px) {
   .box-1 {
     font-size: 6em;
@@ -66,4 +66,4 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-} */
+}

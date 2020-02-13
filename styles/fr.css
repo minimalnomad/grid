@@ -22,23 +22,22 @@ p {
   line-height: 1.2em;
   font-family: "Lora", serif;
   color: #ece4de;
+  padding-top: 0px;
 }
 
 .wrapper {
-  padding: 30px;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(
+      300px,
+      1fr
+    );
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
   grid-gap: 0px;
 }
 
-.poster {
-  height: 75vh;
-}
-
 .box {
-  width: 50vh;
   height: 40vh;
   padding: 50px;
 }
@@ -57,14 +56,16 @@ p {
   color: black;
   background: white;
 }
-
+/* 
 .box-3 h1 {
   color: black;
 }
 
 .box-4 p {
   color: black;
-}
+  padding-top: 0px;
+  margin: 0px;
+} */
 
 .box-5 {
   background: black;

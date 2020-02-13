@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "c c b"
+          "a a b"
+          "a a b"
+          "d d d "
+          "d d d ";
+      }
+
+      .cell-1 {
+        grid-area: a;
+        background: red;
+      }
+      .cell-2 {
+        background: black;
+        grid-area: b;
+      }
+      .cell-3 {
+        background: blue;
+        grid-area: c;
+      }
+      .cell-4 {
+        background: yellow;
+        grid-area: d;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cell-1">cell1</div>
+      <div class="cell-2">cell2</div>
+      <div class="cell-3">cell3</div>
+      <div class="cell-4">cell4</div>
+      <div class="cell-5">cell5</div>
+    </div>
+  </body>
+</html>
